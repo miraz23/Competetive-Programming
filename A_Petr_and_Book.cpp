@@ -1,6 +1,6 @@
 /*
 
-||-------------------------------||         
+||-------------------------------||
 ||      Mohiul Islam Miraz       ||
 ||-------------------------------||
 
@@ -29,14 +29,31 @@ using namespace std;
 int main()
 {
     push;
-    int n; cin >> n;
-    vector<int>v; for(int )
-    while (v < n)
+    int n; s0; c0;
+    cin >> n;
+    vector<int> v(7);
+    for (int i = 0; i < 7; i++)
     {
-        i++;
-        i %= 7;
-        t += a[i];
+        cin >> v[i];
     }
+    while(sum < n)
+    {
+        for(int i = 0; i < 7; i++)
+        {
+            sum += v[i];
+            count++;
+            if (sum >= n) break;
+        }
+        if (count==7 && sum>=n)
+        {
+            break;
+        }  
+        else if (count==7)
+        {
+            count=0;
+        }
+    }
+    cnt;
 
     return 0;
 }
