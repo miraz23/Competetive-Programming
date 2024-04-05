@@ -1,13 +1,13 @@
 /*
 
-||-------------------------------||         
+||-------------------------------||
 ||      Mohiul Islam Miraz       ||
 ||-------------------------------||
 
 */
 
 #include <bits/stdc++.h>
-#define push                      \
+#define swift                     \
     ios_base::sync_with_stdio(0); \
     cin.tie(NULL);
 #define sac sort(v.begin(), v.end())
@@ -16,7 +16,8 @@
 #define f0 bool flag = false
 #define c0 int count = 0
 #define c1 int count = 1
-#define s0 int sum = 0
+#define s0 long long sum = 0
+#define a0 long long ans = 0
 #define ll long long
 #define yes cout << "YES" << endl
 #define no cout << "NO" << endl
@@ -27,33 +28,23 @@ using namespace std;
 
 int main()
 {
-    push;
-    string s;
-    cin >> s;
-    f1;
+    swift;
+	string s ; cin >> s;
 
-    for(int i = 1; i < s.size(); i++)
-    {
-        if(islower(s[i]))
-        {
-            flag = 0;
-            break;
-        }
-    }
-
-    if(flag)
-    {
-        if(islower(s[0])) s[0] = toupper(s[0]);
-        else if(isupper(s[0]))  s[0] = tolower(s[0]);
-        
-        for(int i = 1; i < s.size(); i++)
-        {
-            s[i] = tolower(s[i]);
-        }
-    }
+	ll sz = s.size(); c0;
+	ll ans = (sz)/2;
     
-    for(int i = 0; i < s.size(); i++)
-    cout << s[i];
+	if(sz % 2 == 0)
+    {
+		cout << ans << endl;
+		return 0;
+	}
+	for(ll i = 1 ; i < sz; i ++)
+    {
+		if(s[i]=='1') count++;
+	}
+	if(count > 0) count = 1;
+	cout << ans + count << endl;
 
     return 0;
 }
