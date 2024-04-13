@@ -35,37 +35,42 @@ int main()
 
     while (t--)
     {
-        int n;
-        cin >> n;
-        string s;
-        cin >> s;
-        vector<char> v;
-        for (int i = 0; i < n; i++)
+        int n; cin >> n;
+        string s, temp; cin >> s;
+
+        bool flag1 = false;
+        bool flag2 = false;
+        
+        for (int i = 0; i < n - 1; i++)
         {
-            if (s[i] == 'a' || s[i] == 'e')
+            if ((s[i] == 'a' || s[i] == 'e') && (s[i + 1] != 'a' && s[i + 1] != 'e'))
             {
-                v.push_back(s[i]);
-                int j = i+1;
-                if (j+1 < s.size() - 1)
+                temp += s[i];
+                flag2 = true;
+            }
+            else if ((s[i] != 'a' && s[i] != 'e') && flag2 == false)
+            {
+                temp += s[i];
+            }
+            else if ((s[i] != 'a' && s[i] != 'e') && flag2 == true)
+            {
+                if (s[i + 1] != 'a' && s[i + 1] != 'e')
                 {
-                    if (s[j] != 'a' || s[j] != 'e' && s[j+1] != 'a' || s[j+1] != 'e')
-                    {
-                        v.push_back(s[j]);
-                        v.push_back('.');
-                        i=j;
-                    }
-                    else
-                        v.push_back('.');
+                    temp += s[i];
+                    temp += '.';
+                    flag1 = true;
+                    flag2 = false;
+                }
+                else
+                {
+                    temp += '.';
+                    temp += s[i];
+                    flag2 = true;
+                    flag1 = false;
                 }
             }
-            else
-                v.push_back(s[i]);
         }
-        for (int i = 0; i < v.size(); i++)
-        {
-            cout << v[i];
-        }
-        end;
+        cout << temp << s[n - 1] << endl;
     }
 
     return 0;
