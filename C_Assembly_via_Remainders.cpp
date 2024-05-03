@@ -34,8 +34,10 @@ int main()
 
     while (t--)
     {
-        int n; s0; cin >> n;
+        int n; cin >> n;
         vector<ll>v(n-1);
+
+        int sum = 501;
 
         for(int i = 0; i < n-1; i++) cin >> v[i];
 
