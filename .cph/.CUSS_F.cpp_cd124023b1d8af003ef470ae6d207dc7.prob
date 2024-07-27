@@ -1,0 +1,1 @@
+{"name":"Local: CUSS_F","url":"d:\\Code\\CUSS_F.cpp","tests":[{"id":1720102323318,"input":"2\nh**\n*h*\n**h\nh**\n**h\n***","output":"No\nYes"},{"id":1720104821647,"input":"1\n***\n*h*\nh**","output":"No"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\CUSS_F.cpp","group":"local","local":true}
