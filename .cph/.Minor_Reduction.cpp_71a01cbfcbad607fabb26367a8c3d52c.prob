@@ -1,0 +1,1 @@
+{"name":"Local: Minor_Reduction","url":"d:\\Code\\Minor_Reduction.cpp","tests":[{"id":1739294007312,"input":"2\n10057\n90","output":"10012\n9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Minor_Reduction.cpp","group":"local","local":true}
