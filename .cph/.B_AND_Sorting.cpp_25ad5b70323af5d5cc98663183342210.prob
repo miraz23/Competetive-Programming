@@ -1,0 +1,1 @@
+{"name":"Local: B_AND_Sorting","url":"d:\\Code\\B_AND_Sorting.cpp","tests":[{"id":1740676927380,"input":"4\n4\n0 1 3 2\n2\n1 0\n7\n0 1 2 3 5 6 4\n5\n0 3 2 1 4","output":"2\n0\n4\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\B_AND_Sorting.cpp","group":"local","local":true}
