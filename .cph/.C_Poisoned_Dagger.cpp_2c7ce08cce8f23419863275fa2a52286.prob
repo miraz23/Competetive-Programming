@@ -1,0 +1,1 @@
+{"name":"Local: C_Poisoned_Dagger","url":"d:\\Code\\C_Poisoned_Dagger.cpp","tests":[{"id":1743177931929,"input":"4\n2 5\n1 5\n3 10\n2 4 10\n5 3\n1 2 4 5 7\n4 1000\n3 25 64 1337","output":"3\n4\n1\n470"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\C_Poisoned_Dagger.cpp","group":"local","local":true}
